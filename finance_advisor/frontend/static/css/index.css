@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* 
+main_text: #E0E0E0
+secondary_text: #FFD700
+primary_btn: #20B2AA
+secondary_btn: #F0E68C
+*/
+:root{
+    --main_text: #E0E0E0;
+    --secondary_text: #FFD700;
+    --primary_btn: #20B2AA;
+    --secondary_btn: #F0E68C;
+    --white: #ffffff:
+    --black: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#dash_main h2{
+
+}
+#dash_main{
+    background-color: #2E8B57;
+}
+
+#dash_main .Landing{
+    width: 100dvw;
+    height: 100dvh;
+    padding: 1em 0 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+#dash_main .Landing h1{
+    font-family: "Roboto", sans-serif;
+    color: #E0E0E0;
+    font-size: 7em;
+} 
+#dash_main .Landing h2{
+    font-family: "Roboto", sans-serif;
+    color: #E0E0E0;
+    font-size: 6em;
+    text-transform: capitalize;
+}
+#dash_main .Landing p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #E0E0E0;
+    font-size: 2em;
+}
+#dash_main .Landing h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #FFD700;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+#dash_main button{
+    width: fit-content;
+    align-self: center;
+    font-size: 1.2em;
+    padding: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--black);
+    background-color: var(--secondary_btn);
+    border: none;
+    cursor: pointer;
+}
+
+/* Login css */
