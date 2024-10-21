@@ -12,17 +12,18 @@ secondary_btn: #F0E68C
     --secondary_btn: #F0E68C;
     --white: #ffffff:
     --black: #000000;
+    --background: #2E8B57
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-#dash_main h2{
+/* #dash_main h2{
 
-}
+} */
 #dash_main{
-    background-color: #2E8B57;
+    background-color: var(--background);
 }
 
 #dash_main .Landing{
@@ -73,3 +74,64 @@ secondary_btn: #F0E68C
 }
 
 /* Login css */
+#login_main{
+    background-color: var(--background);
+    width: 100dvw;
+    height: 100dvh;
+    padding: .5rem 1rem;
+}
+#login_main .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login_main h2{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--main_text);
+}
+#login_main p{
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    color: var(--secondary_text);
+    font-size: 1.2em;
+}
+#login_main .login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 85%;
+}
+#login_main .one{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: .2rem;
+}
+#login_main label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--main_text);
+}
+#login_main input{
+    border: none;
+    background-color: var(--main_text);
+    height: 1.5rem;
+    border-radius: .3em;
+    padding-left: .3rem;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
+#login_main select{
+    background-color: var(--main_text);
+    height: 1.5rem;
+    border-radius: .3em;
+    outline: none;
+    border: none;
+}
