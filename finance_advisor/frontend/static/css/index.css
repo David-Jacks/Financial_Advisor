@@ -78,7 +78,10 @@ secondary_btn: #F0E68C
     background-color: var(--background);
     width: 100dvw;
     height: 100dvh;
-    padding: .5rem 1rem;
+    padding: .2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #login_main .head{
     display: flex;
@@ -87,32 +90,35 @@ secondary_btn: #F0E68C
 }
 #login_main h2{
     font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 2.5em;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 3em;
     color: var(--main_text);
 }
 #login_main p{
     font-family: "Poppins", sans-serif;
     text-transform: none;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--secondary_text);
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-top: -.5em;
+    border-bottom: 1px dotted var(--main_text);
 }
 #login_main .login_form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 85%;
+    height: 88%;
+    width: 70%;
 }
 #login_main .one{
     display: flex;
     flex-direction: column;
     width: 70%;
-    gap: .2rem;
+    gap: 0rem;
 }
-#login_main label{
+#login_main label, #login_main a{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: var(--main_text);
@@ -127,6 +133,7 @@ secondary_btn: #F0E68C
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: var(--black);
+    margin-top: -.1rem;
 }
 #login_main select{
     background-color: var(--main_text);
@@ -134,4 +141,30 @@ secondary_btn: #F0E68C
     border-radius: .3em;
     outline: none;
     border: none;
+    margin-top: -.1rem;
+
+}
+#login_main .terms{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#login_main a.btn{
+    border: none;
+    background-color: var(--secondary_btn);
+    padding: .4rem;
+    border-radius: .1rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: -.2rem;
+    text-transform: uppercase;
+
+}
+
+/* results css */
+#results_main{
+    padding: 1rem;
 }

@@ -57,10 +57,11 @@ function Login() {
             <div className="terms">
                 <input type='checkbox'/>
                 <label htmlFor="">I accept terms and conditions</label>
-            </div>
                 <Link>read our terms and conditions</Link>
-            
-            <Link>Get Advice</Link>
+            </div>
+            <div className="terms">
+                <Link to={"/results"} className='btn'>Get Advice</Link>
+            </div>
         </form>
     </div>
   )
